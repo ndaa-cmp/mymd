@@ -56,8 +56,8 @@ global.loadDatabase = async function loadDatabase() {
 }
 global.loadDatabase()
 
-const authF = set.opts['single'] ? `${set.opts._[0] || 'rasel'}.sessi.json` : 'sessions'
-const { state, saveState, saveCreds } = set.opts['single'] ? await useSingleFileAuthState(authF) : await storeSystem.useMultiFileAuthState(authF)                      
+const authF = "sessions"
+const { state, saveState, saveCreds } = await storeSystem.useMultiFileAuthState(authF)                 
 
 const connectionOptions = {
   printQRInTerminal: true,

@@ -96,7 +96,7 @@ global.set = {
     pack: sticker_name,
     auth: sticker_author,
     owner: [
-        ['6285346545126', 'Acel', true],
+        ['6285640575421', 'Ndaa', true],
         // JSON.parse(readFileSync('./src/owner.json'))
         // ['number', 'name', dev?]
     ],
